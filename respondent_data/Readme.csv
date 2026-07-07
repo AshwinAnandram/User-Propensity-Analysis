@@ -1,0 +1,16 @@
+Feature,Type,Details
+user_id,Integer,Unique
+loc_india,Binary,"Yes 100%, No 0%"
+date_of_join,Date,Between today and a year ago
+date_of_last_invite,Date,Between today and a month ago
+date_of_last_participation,Date,Between today and 6 months ago
+date_of_last_completion,Date,Between today and a year ago
+no_surveys_clicked,Integer,"0-5000, Mean ~100"
+no_surveys_completed,Integer,"0-600, Mean ~14"
+min_incentive_threshold,Float,"0.5 - 3.5, Mean ~0.75 "
+max_incentive_threshold,Float,"1.5 - 7.5, Mean ~2.5, Should be greater than min_incentive_threshold"
+min_survey_length,Float,"5 - 10, Mean ~ 7.5, Higher the min_survey_length, higher the min and max incentive thresholds "
+max_survey_length,Float,"7.5 - 25, Mean ~ 12.5, Higher the max_survey_length, higher the min and max incentive thresholds "
+age,Integer,"18-70, Mean ~35"
+gender,Category,"Female 45%, Male 55%"
+survey_completion_propensity,Float,Target Variable to be determined
